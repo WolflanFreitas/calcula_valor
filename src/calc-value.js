@@ -3,6 +3,4 @@ function calcularMontante(capital, taxa, periodo) {
     return montante;
 }
 
-module.exports = {
-    calcularMontante
-}
+export {calcularMontante}
