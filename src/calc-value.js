@@ -1,5 +1,5 @@
-function calcularMontante(capital, taxa, numPrestacoes) {
-    const montante =  0;
+function calcularMontante(capital, taxa, periodo) {
+    const montante =  capital * Math.pow((1 + taxa), periodo - 1);
     return montante;
 }
 
