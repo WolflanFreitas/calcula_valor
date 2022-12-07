@@ -1,6 +1,17 @@
 function calcularMontante(capital, taxa, periodo) {
     const montante =  capital * Math.pow((1 + taxa), periodo - 1);
-    return montante;
+    return arredondar(montante);
 }
 
-export {calcularMontante}
+function arredondar(valor) {
+    // TODO
+    const precisao = 100;
+    const arredondado = Math.round(valor * precisao) / precisao;
+
+    return arredondado;
+}
+
+export {
+    calcularMontante,
+    arredondar
+}
