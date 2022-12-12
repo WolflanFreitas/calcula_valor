@@ -1,26 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1670588217573" clover="3.2.0">
-  <project timestamp="1670588217574" name="All files">
-    <metrics statements="17" coveredstatements="17" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="5" elements="26" coveredelements="26" complexity="0" loc="17" ncloc="17" packages="1" files="1" classes="1"/>
-    <file name="calc-value.js" path="C:\Users\wolflan\igti\calcula_valor\src\calc-value.js">
+<coverage generated="1670874472653" clover="3.2.0">
+  <project timestamp="1670874472653" name="All files">
+    <metrics statements="29" coveredstatements="25" conditionals="6" coveredconditionals="5" methods="11" coveredmethods="8" elements="46" coveredelements="38" complexity="0" loc="29" ncloc="29" packages="2" files="2" classes="2"/>
+    <package name="src">
       <metrics statements="17" coveredstatements="17" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="5"/>
-      <line num="2" count="2" type="stmt"/>
-      <line num="3" count="2" type="stmt"/>
-      <line num="8" count="20" type="stmt"/>
-      <line num="9" count="20" type="stmt"/>
-      <line num="11" count="20" type="stmt"/>
-      <line num="15" count="5" type="stmt"/>
-      <line num="16" count="5" type="stmt"/>
-      <line num="18" count="10" type="stmt"/>
-      <line num="19" count="5" type="stmt"/>
-      <line num="20" count="5" type="cond" truecount="2" falsecount="0"/>
-      <line num="21" count="5" type="cond" truecount="2" falsecount="0"/>
-      <line num="23" count="5" type="stmt"/>
-      <line num="24" count="4" type="stmt"/>
-      <line num="25" count="14" type="stmt"/>
-      <line num="26" count="4" type="stmt"/>
-      <line num="27" count="4" type="stmt"/>
-      <line num="30" count="5" type="stmt"/>
-    </file>
+      <file name="calc-value.js" path="C:\Users\wolflan\igti\calcula_valor\src\calc-value.js">
+        <metrics statements="17" coveredstatements="17" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="5"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="8" count="21" type="stmt"/>
+        <line num="9" count="21" type="stmt"/>
+        <line num="11" count="21" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="16" count="5" type="stmt"/>
+        <line num="18" count="10" type="stmt"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="20" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="23" count="5" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
+        <line num="25" count="14" type="stmt"/>
+        <line num="26" count="4" type="stmt"/>
+        <line num="27" count="4" type="stmt"/>
+        <line num="30" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="test">
+      <metrics statements="12" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="6" coveredmethods="3"/>
+      <file name="extensions.js" path="C:\Users\wolflan\igti\calcula_valor\test\extensions.js">
+        <metrics statements="12" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="6" coveredmethods="3"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>

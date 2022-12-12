@@ -1,4 +1,6 @@
-import {calcularMontante, arredondar, calcularPrestacoes} from "../src/calc-value.js"
+import { expect } from "@jest/globals";
+import {calcularMontante, arredondar, calcularPrestacoes} from "../src/calc-value.js";
+import "./extensions.js";
 
 describe('calcularMontante', () => {
     test('Com uma prestação o montante é igual ao capital', () => {
@@ -63,13 +65,14 @@ describe('calcularPrestacoes', () => {
 
         // Então (Then)
         expect(prestacoes.length).toBe(numeroPrestacoes);
-        const soma = arredondar(prestacoes[0] + prestacoes[1] + prestacoes[2]);
-        expect(soma).toBe(montante);
+        expect(prestacoes).tenhaSomaDeValoresIgual(montante);
 
-        for(let i = 0; i < prestacoes.length - 1; i++) {
-            const j = i + 1;
-            expect(prestacoes[i]).toBeGreaterThanOrEqual(prestacoes[j])
-        }
+        // for(let i = 0; i < prestacoes.length - 1; i++) {
+        //     const j = i + 1;
+        //     expect(prestacoes[i]).toBeGreaterThanOrEqual(prestacoes[j])
+        // }
+
+        expect(prestacoes).sejaDecrescente();
     });
 
     test('Desafio semi-final', () => {
@@ -82,8 +85,7 @@ describe('calcularPrestacoes', () => {
 
         // Então (Then)
         expect(prestacoes.length).toBe(numeroPrestacoes);
-        const soma = arredondar(prestacoes[0] + prestacoes[1] + prestacoes[2]);
-        expect(soma).toBe(arredondar(montante));
+        expect(prestacoes).tenhaSomaDeValoresIgual(montante);
 
         for(let i = 0; i < prestacoes.length - 1; i++) {
             const j = i + 1;
